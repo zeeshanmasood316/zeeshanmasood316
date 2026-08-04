@@ -12,10 +12,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     name: generate-3d-contribution-graph
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
       
-      - uses: yoshi3868/github-profile-3d-contrib@0.7.2
+      - uses: yoshi389111/github-profile-3d-contrib@latest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
