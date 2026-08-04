@@ -14,10 +14,12 @@ jobs:
     name: generate-3d-contribution-graph
     steps:
       - uses: actions/checkout@v4
-      - uses: yoshi3868/github-profile-3d-contrib@0.7.1
+      
+      - uses: yoshi3868/github-profile-3d-contrib@0.7.2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
+          
       - name: Commit & Push Changes
         run: |
           git config user.name "github-actions[bot]"
