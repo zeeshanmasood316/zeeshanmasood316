@@ -1,0 +1,25 @@
+<svg width="100%" height="120" viewBox="0 0 1200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="footerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F36363" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#541414" stop-opacity="1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Dynamic Multi-Layer Waving Paths -->
+  <path d="M0 40 C 300 80, 600 0, 900 50 C 1050 75, 1150 30, 1200 40 L1200 120 L0 120 Z" fill="#541414" opacity="0.5">
+    <animate attributeName="d" 
+             values="M0 40 C 300 80, 600 0, 900 50 C 1050 75, 1150 30, 1200 40 L1200 120 L0 120 Z;
+                     M0 50 C 300 10, 600 70, 900 20 C 1050 40, 1150 80, 1200 50 L1200 120 L0 120 Z;
+                     M0 40 C 300 80, 600 0, 900 50 C 1050 75, 1150 30, 1200 40 L1200 120 L0 120 Z" 
+             dur="10s" repeatCount="indefinite" />
+  </path>
+
+  <path d="M0 60 C 300 20, 600 80, 900 30 C 1050 50, 1150 20, 1200 60 L1200 120 L0 120 Z" fill="url(#footerGrad)">
+    <animate attributeName="d" 
+             values="M0 60 C 300 20, 600 80, 900 30 C 1050 50, 1150 20, 1200 60 L1200 120 L0 120 Z;
+                     M0 30 C 300 70, 600 20, 900 80 C 1050 20, 1150 60, 1200 30 L1200 120 L0 120 Z;
+                     M0 60 C 300 20, 600 80, 900 30 C 1050 50, 1150 20, 1200 60 L1200 120 L0 120 Z" 
+             dur="7s" repeatCount="indefinite" />
+  </path>
+</svg>

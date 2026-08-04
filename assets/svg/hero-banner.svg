@@ -1,0 +1,56 @@
+<svg width="100%" height="280" viewBox="0 0 1200 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2B0A0A" />
+      <stop offset="50%" stop-color="#541414" />
+      <stop offset="100%" stop-color="#1A0505" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradient -->
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F36363" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#541414" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Glassmorphism Filter -->
+    <filter id="glass" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="12" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="280" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Ambient Light Orbs -->
+  <circle cx="200" cy="80" r="140" fill="url(#glow)" />
+  <circle cx="1000" cy="200" r="160" fill="url(#glow)" />
+
+  <!-- Geometric Grid Pattern Overlay -->
+  <g stroke="#EF8182" stroke-opacity="0.08" stroke-width="1">
+    <path d="M0 70H1200 M0 140H1200 M0 210H1200" />
+    <path d="M200 0V280 M400 0V280 M600 0V280 M800 0V280 M1000 0V280" />
+  </g>
+
+  <!-- Animated Floating Shapes -->
+  <g opacity="0.6">
+    <circle cx="150" cy="200" r="6" fill="#F36363">
+      <animate attributeName="cy" values="200;180;200" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <rect x="1020" y="60" width="12" height="12" rx="3" fill="#EF8182" transform="rotate(45 1026 66)">
+      <animate attributeName="transform" type="rotate" values="45 1026 66; 225 1026 66; 45 1026 66" dur="8s" repeatCount="indefinite" />
+    </rect>
+  </g>
+
+  <!-- Title & Subtitle Branding -->
+  <text x="600" y="115" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="46" fill="#FFFFFF" letter-spacing="1">
+    Zeeshan Masood
+  </text>
+  
+  <text x="600" y="160" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="18" fill="#F36363" letter-spacing="2">
+    AI ENGINEER • FULL-STACK DEVELOPER • DESIGN SYSTEMS CREATOR
+  </text>
+
+  <!-- Decorative Accent Bar -->
+  <rect x="520" y="185" width="160" height="3" rx="1.5" fill="#EF8182" />
+</svg>
